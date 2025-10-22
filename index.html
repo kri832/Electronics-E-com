@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type = "image/png">
+    <title>WattWise - Premium collection of Electronics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Top Head line -->
+    <section class="top-text">
+        <div class="head container">
+            <div class="head-txt">
+                <p>Free Shipping, 30-days Return or refund guarantee.</p>
+            </div>
+            <div class="sign_in_up">
+                <a href="/Users/apple/Documents/cursor project/sample login/index.html">Sign In</a>
+                <a href="/Users/apple/Documents/cursor project/sample login/index.html">Sign Up</a>
+            </div>
+        </div>
+    </section>
+    <!-- Header-->    
+     <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="logo 1.png" >
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Category</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search Products...." id="searchInput">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+     </header>
+
+     <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Premium and Quality Electronic Products Store</h1>
+                    <p>ELectronic deals are renowned for being some of the best discount gadgets and tech accessories available online.</p>
+                    <button class="cta-button">Shop Now</button>
+                </div>
+                <div class="hero-image">
+                    <div class="product-showcase">
+                        <a href="#categories" class="showcase-item">
+                            <i class="fas fa-desktop"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Popular Category -->
+       <section class="categories" id="categories">
+            <div class="container">
+                <h2>Popular Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="mobile">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Phones</h3>
+                        <p>Latest Premium Smartphones</p>
+                    </div>
+                    <div class="category-card" data-category="laptops">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Laptop</h3>
+                        <p>High Tech Smart AI Laptops & Desktops</p>
+                    </div>
+                    <div class="category-card" data-category="earphones">
+                        <div class="category-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h3>Earphone</h3>
+                        <p>Audio Equipment with Premium Quality and high tech sound</p>
+                    </div>
+                    <div class="category-card" data-category="watch">
+                        <div class="category-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Smart Watch</h3>
+                        <p>Premium quality Smart watches with high tech Features</p>
+                    </div>
+                    <div class="category-card" data-category="tv">
+                        <div class="category-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>Televisions</h3>
+                        <p>Premium Televisions with High visual Quality and sound</p>
+                    </div>
+                    <div class="category-card" data-category="camera">
+                        <div class="category-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Cameras</h3>
+                        <p>Premium Cameras with High visual Quality Images And Enhace AF Features</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <div class="featured-grid">
+                    <div class="featured-card pastel-pink">
+                        <div class="featured-content">
+                            <h3>Discover Tech Smart Watches</h3>
+                            <p>Up To 50% Off</p>
+                            <button class="shop-button">Shop Now</button>
+                        </div>
+                        <div class="featured-image">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="featured-card dark-red">
+                        <div class="featured-content">
+                            <h3>Home Decor Range</h3>
+                            <p>Smart Home Solutions</p>
+                            <button class="shop-button">Shop Now</button>
+                        </div>
+                        <div class="featured-image">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Popular Products</h2>
+                    <div class="product-filter">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile Phones</button>
+                        <button class="filter-btn" data-filter="laptop">Laptops</button>
+                        <button class="filter-btn" data-filter="earphones">Earphones</button>
+                        <button class="filter-btn" data-filter="watch">Smart-Watch</button>
+                        <button class="filter-btn" data-filter="tv">Televisions</button>
+                        <button class="filter-btn" data-filter="camera">Camera</button>
+                    </div>
+                </div>
+                <div class="product-grid" id="productsGrid">
+                    <!-- Products will load dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Deal of the Week -->
+        <section class="deal-section" id="deals">
+            <div class="container">
+                <div class="deal-content">
+                    <div class="deal-info">
+                        <h2>Deal of the Week</h2>
+                        <p>Offering the best deal of the week and limited stock available</p>
+                        <div class="countdown">
+                            <div class="countdown-items">
+                                <span class="countdown-number" id="days">15</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-items">
+                                <span class="countdown-number" id="hours">12</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-items">
+                                <span class="countdown-number" id="minutes">45</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-items">
+                                <span class="countdown-number" id="seconds">40</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                        <button class="shop-now-btn">Shop Now</button>
+                    </div>
+                    <div class="deal-products">
+                        <div class="deal-product">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+                        <div class="deal-product">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- customer testimonial -->
+         <section class="testimonials">
+            <div class="container">
+                <h2>What our Customer Says!</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonials-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Amazing quality products and excellent customer services. with Highly recommended for all the premium Electronic needs with special discounts.</p>
+                            <div class="customer-info">
+                                <div class="customer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="customer-details">
+                                    <h4>Tushar Narang</h4>
+                                    <span>Verified Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <p>The price point is genuinely the best I found anywhere, making the purchase a no-brainer. Fast shipping and the product itself is so premium; it's a huge step up from what I expected for this value.</p>
+                            <div class="customer-info">
+                                <div class="customer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="customer-details">
+                                    <h4>Girish Narang</h4>
+                                    <span>Verified Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>Fast Delivery and great pricing of the products with the lowest price from the market and the product quality exceedes my expectations more higher</p>
+                            <div class="customer-info">
+                                <div class="customer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="customer-details">
+                                    <h4>Priyanshi Bhatt</h4>
+                                    <span>Verified Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <p>The rare products find in this platform which we do not see regularly in the market with the official certificate provided by the company.</p>
+                            <div class="customer-info">
+                                <div class="customer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="customer-details">
+                                    <h4>Tanisha Mamidwar</h4>
+                                    <span>Verified Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>The after selling service of the product is also too good as their support is very helpful and available with 24x7 service.</p>
+                            <div class="customer-info">
+                                <div class="customer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="customer-details">
+                                    <h4>Bhavik Narang</h4>
+                                    <span>Verified Customer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+         </section>
+
+        <!-- Latest Insights -->
+        <section class="insights">
+            <div class="container">
+                <h2>Latest Insights</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="insight-content">
+                            <h3>Revolutionizing Electronics, Redefining Experiences</h3>
+                            <p>Discover the Latest trend in consumer electronics and how they're shaping and digital future.</p>
+                            <span class="insight-date">December 15, 2025</span>
+                        </div>
+                    </div>
+                    <div class="insight-card">
+                        <div class="insight-image">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="insight-content">
+                            <h3>5 Factors to consider when choosing furniture for your Living Room</h3>
+                            <p>Smart Home integration and modern electronics for contemporary living spaces.</p>
+                            <span class="insight-date">December 12, 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- COntact Form Section -->
+                    <div class="contact-form-section">
+                        <div class="contact-info">
+                            <div class="footer-logo">
+                                <img src="logo 1.png" alt="">
+                            </div>
+                            <p>Get in touch with us for any inquiries or support. We're here to help you with all your electronics needs.</p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel: +918329651298">+91 8329651298</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=narangk2005@gmail.com">narangk2005@gmail.com</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>WattWise Offical Office, Near Nagpur Road, Chandrapur 442401</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form">
+                            <h3>Send us a message</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="phone" id="Phone" placeholder="Your Phone" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="message" name="message" id="message" placeholder="Your Message" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Loaction Map section -->
+                     <div class="location-section">
+                        <h3>Visit Our Store</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.435651491781!2d79.2906776743408!3d19.948172924015754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd2d428f445f9f3%3A0x91d5a85b2a99d641!2sNarang%20House!5e0!3m2!1sen!2sin!4v1761082412273!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="350" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="store-hours">
+                            <h4>Store Hours</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span>Monday - Friday</span>
+                                    <span>9:00 AM - 8:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Saturday</span>
+                                    <span>10:00 AM - 7:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Sunday</span>
+                                    <span>12:00 AM - 7:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#categories">Category</a></li>
+                                <li><a href="#products">Product</a></li>
+                                <li><a href="#deals">Deals</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Warranty</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4> Company</h4>
+                            <ul>
+                                <li><a href="#" id="aboutLink">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#" id="termsLink">Terms And services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-content">
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Terms And Conditions popup -->
+         <div class="popup-overlay" id="termsPopup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h2>Terms And Conditions</h2>
+                    <button class="close-btn" id="closePopup">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By Using this website, you agree to be bound by these Terms And Conditions in full.</p>
+
+                    <h3>2. User Account</h3>
+                    <p>You are responsible for maintaining the confidentialinty of your account details and password and for all activities that occur under the account.</p>
+
+                    <h3>3. Accuracy of Information</h3>
+                    <p>All descriptions, prices, and availability of products are subject to change without notice. we do not warrant that product descriptions are error-free.</p>
+
+                    <h3>4. Order Acceptance</h3>
+                    <p>To refuse or cancel any order for any reason, including limitations on quantities available for purchase or errors in the product or pricing Information.</p>
+
+                    <h3>5. Payment Terms</h3>
+                    <p>All purchases require full payment at the time of placing the order, using the approved payment methods.</p>
+
+                    <h3>6. Intellectual property</h3>
+                    <p>All content on the site, including logos, images, text, and code, is the property of WattWise and is protected by Copyright and Intellectual property laws.</p>
+
+                    <h3>7. Shipping and Delivery</h3>
+                    <p>Shipping estimates are provided for convenience only. We are not liable for any delays or issues caused by the third-party shipping carriers.</p>
+
+                    <h3>8.Returns and Refunds</h3>
+                    <p>Purchases are subject to our specific 7-days return or refund guarantee, as outlined in the separate return policy doccument.</p>
+
+                    <h3>9. Prohibited Use</h3>
+                    <p>You agree not to use the site for any unlawful purpose, to post harmful content, or to disrupt the site's operation.</p>
+
+                    <h3>10. Limitations of Liability</h3>
+                    <p>WattWise shall not be laible for any indirect, incidental or consequential damages arising from the use of, or the inability to use, the products or the website.</p>
+                </div>
+            </div>
+         </div>
+
+        <!-- About Us popup -->
+        <div class="popup-overlay" id="aboutPopup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h2>About WattWise</h2>
+                    <button class="close-btn" id="closeAboutPopup">&times;</button>
+                </div>
+                <div class="popup-body">
+                    <div class="about-content">
+                        <div class="about-intro">
+                            <h3>Welcome to WattWise</h3>
+                            <p>WattWise is your premier destination for high-quality electronics and cutting-edge technology. We are passionate about bringing you the latest innovations in consumer electronics, from smartphones and laptops to smart home devices and audio equipment.</p>
+                        </div>
+
+                        <div class="about-mission">
+                            <h3>Our Mission</h3>
+                            <p>To provide our customers with access to premium electronic products at competitive prices, backed by exceptional customer service and support. We believe that technology should enhance your life, and we're here to help you find the perfect devices to do just that.</p>
+                        </div>
+
+                        <div class="about-values">
+                            <h3>Our Values</h3>
+                            <div class="values-grid">
+                                <div class="value-item">
+                                    <i class="fas fa-star"></i>
+                                    <h4>Quality First</h4>
+                                    <p>We only stock products from trusted brands and manufacturers, ensuring you receive the highest quality electronics.</p>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-shipping-fast"></i>
+                                    <h4>Fast Delivery</h4>
+                                    <p>Free shipping on all orders with fast, reliable delivery to your doorstep within 2-3 business days.</p>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-headset"></i>
+                                    <h4>24/7 Support</h4>
+                                    <p>Our dedicated customer support team is available around the clock to assist you with any questions or concerns.</p>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h4>Warranty Protection</h4>
+                                    <p>All products come with manufacturer warranty, and we offer extended protection plans for your peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-story">
+                            <h3>Our Story</h3>
+                            <p>Founded in 2020, WattWise began as a small electronics store with a big vision: to make cutting-edge technology accessible to everyone. What started as a local business has grown into a trusted online platform serving customers across the country.</p>
+                            <p>Our team of tech enthusiasts carefully curates every product in our catalog, ensuring that we only offer devices that meet our high standards for quality, innovation, and value. We believe in building long-term relationships with our customers, which is why we offer comprehensive support and flexible return policies.</p>
+                        </div>
+
+                        <div class="about-stats">
+                            <h3>By the Numbers</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">50,000+</div>
+                                    <div class="stat-label">Happy Customers</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">10,000+</div>
+                                    <div class="stat-label">Products Sold</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">99.5%</div>
+                                    <div class="stat-label">Customer Satisfaction</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Customer Support</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-contact">
+                            <h3>Get in Touch</h3>
+                            <p>Have questions about our products or services? We'd love to hear from you!</p>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 8329651298</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>narangk2005@gmail.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>WattWise Official Office, Near Nagpur Road, Chandrapur 442401</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="products.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
